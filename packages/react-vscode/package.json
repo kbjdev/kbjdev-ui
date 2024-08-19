@@ -1,0 +1,12 @@
+{
+  "name": "@kbjdev/react-vscode",
+  "version": "0.1.0-alpha.0",
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
