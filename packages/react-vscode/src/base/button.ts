@@ -19,7 +19,7 @@ const BaseButton = styled.button`
     background-color: ${({ theme }) => theme['button.hoverBackground']};
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 1px solid ${({ theme }) => theme.focusBorder};
     outline-offset: -1px;
   }

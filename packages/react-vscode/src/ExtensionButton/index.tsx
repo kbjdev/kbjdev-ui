@@ -23,7 +23,7 @@ const MainButton = styled(BaseButton)<{ $withDropdown: boolean }>`
   &:hover {
     background-color: ${({ theme }) => theme['extensionButton.hoverBackground']};
   }
-  &:focus {
+  &:focus-visible {
     outline-offset: 1px;
   }
 `;
@@ -56,7 +56,7 @@ const DropdownButton = styled(BaseButton)`
   &:hover {
     background-color: ${({ theme }) => theme['extensionButton.hoverBackground']};
   }
-  &:focus {
+  &:focus-visible {
     outline-offset: 1px;
   }
 `;

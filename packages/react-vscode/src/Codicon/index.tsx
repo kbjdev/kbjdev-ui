@@ -1,7 +1,7 @@
 import React, { FC, HTMLAttributes } from 'react';
 import mapping from '@vscode/codicons/src/template/mapping.json';
 
-type CodiconName = keyof typeof mapping;
+export type CodiconName = keyof typeof mapping;
 
 interface ICodiconProps extends HTMLAttributes<HTMLDivElement> {
   name: CodiconName;
