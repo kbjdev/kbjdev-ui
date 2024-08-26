@@ -1,12 +1,17 @@
 import '@vscode/codicons/dist/codicon.css';
 
-export { default as Button } from './Button';
-
 export { default as Codicon } from './Codicon';
+
+/* BUTTON */
+export { default as Button } from './Button';
 
 export { default as ExtensionButton } from './ExtensionButton';
 
 export { default as ToolbarButton } from './ToolbarButton';
+
+/* BADGE */
+
+export { default as CountBadge } from './CountBadge';
 
 export { default as ReactVSCodeProvider } from './ReactVSCodeProvider';
 export * from './ReactVSCodeProvider';
