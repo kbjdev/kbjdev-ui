@@ -19,7 +19,7 @@
   "singleAttributePerLine": false,
   "overrides": [
     {
-      "files": "packages/react-vscode/src/utils/colorRegistry.ts",
+      "files": "packages/react-vscode/src/utils/color/colorRegistry.ts",
       "options": {
         "printWidth": 1000
       }

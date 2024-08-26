@@ -1,6 +1,10 @@
 require('@kbjdev/eslint-config/patch');
 module.exports = {
-  extends: ['@kbjdev/eslint-config', '@kbjdev/eslint-config/mixins/react'],
+  extends: [
+    '@kbjdev/eslint-config',
+    '@kbjdev/eslint-config/mixins/react',
+    'plugin:storybook/recommended',
+  ],
   parserOptions: { project: true, tsconfigRootDir: __dirname },
   settings: {
     react: {

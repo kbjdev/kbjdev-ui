@@ -1,17 +1,20 @@
 {
   "name": "@kbjdev/react-vscode",
   "version": "0.1.0-alpha.0",
+  "main": "src/index.ts",
   "scripts": {
     "lint": "eslint ."
   },
   "dependencies": {
+    "@vscode/codicons": "^0.0.36",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.12"
   },
   "devDependencies": {
+    "@kbjdev/eslint-config": "workspace:*",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@kbjdev/eslint-config": "workspace:*"
+    "@types/react-dom": "^18.3.0"
   },
   "peerDependencies": {
     "react": ">=18",
