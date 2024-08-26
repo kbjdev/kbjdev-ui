@@ -4,6 +4,8 @@ export { default as Button } from './Button';
 
 export { default as Codicon } from './Codicon';
 
+export { default as ExtensionButton } from './ExtensionButton';
+
 export { default as ReactVSCodeProvider } from './ReactVSCodeProvider';
 export * from './ReactVSCodeProvider';
 

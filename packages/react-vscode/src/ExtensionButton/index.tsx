@@ -5,8 +5,8 @@ import BaseButton from '../base/button';
 
 const Wrapper = styled.div`
   display: flex;
-  width: 100%;
-  height: 28px;
+  width: max-content;
+  height: 16px;
 `;
 
 const MainButton = styled(BaseButton)<{ $withDropdown: boolean }>`
@@ -14,6 +14,18 @@ const MainButton = styled(BaseButton)<{ $withDropdown: boolean }>`
   border-top-right-radius: ${({ $withDropdown }) => ($withDropdown ? 0 : '2px')};
   border-bottom-right-radius: ${({ $withDropdown }) => ($withDropdown ? 0 : '2px')};
   border-right: none;
+  padding: 0 5px;
+  background-color: ${({ theme }) => theme['extensionButton.background']};
+
+  font-size: 11px;
+  color: ${({ theme }) => theme['extensionButton.prominentForeground']};
+
+  &:hover {
+    background-color: ${({ theme }) => theme['extensionButton.hoverBackground']};
+  }
+  &:focus {
+    outline-offset: 1px;
+  }
 `;
 
 const Separator = styled.div`
@@ -22,28 +34,38 @@ const Separator = styled.div`
   min-width: 1px;
   width: 1px;
   height: 100%;
-  padding: 4px 0;
-  background-color: ${({ theme }) => theme['button.background']};
+  padding: 3px 0;
+  background-color: ${({ theme }) => theme['extensionButton.background']};
   & > div {
     width: 100%;
     height: 100%;
-    background-color: ${({ theme }) => theme['button.separator']};
+    background-color: ${({ theme }) => theme['extensionButton.separator']};
   }
 `;
 
 const DropdownButton = styled(BaseButton)`
-  width: 25px;
+  width: 16px;
   height: 100%;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: none;
+
+  color: ${({ theme }) => theme['extensionButton.prominentForeground']};
+
+  background-color: ${({ theme }) => theme['extensionButton.background']};
+  &:hover {
+    background-color: ${({ theme }) => theme['extensionButton.hoverBackground']};
+  }
+  &:focus {
+    outline-offset: 1px;
+  }
 `;
 
-interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface IExtensionButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   onDropdownClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-const Button: FC<PropsWithChildren<IButtonProps>> = ({
+const ExtensionButton: FC<PropsWithChildren<IExtensionButtonProps>> = ({
   children,
   onDropdownClick,
   style,
@@ -71,4 +93,4 @@ const Button: FC<PropsWithChildren<IButtonProps>> = ({
   );
 };
 
-export default Button;
+export default ExtensionButton;
