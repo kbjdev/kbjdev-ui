@@ -27,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme['editor.background']};
+    background-color: ${({ theme }) => theme['sideBar.background']};
   }
 `;
 

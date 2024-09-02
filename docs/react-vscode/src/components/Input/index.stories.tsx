@@ -1,10 +1,10 @@
 import React from 'react';
-import { Button } from '@kbjdev/react-vscode';
+import { Input } from '@kbjdev/react-vscode';
 import type { Meta } from '@storybook/react';
 
 const meta: Meta = {
-  title: 'Components/Button/Button',
-  component: Button,
+  title: 'Components/Input',
+  component: Input,
   decorators: [
     // eslint-disable-next-line @typescript-eslint/naming-convention
     (Story) => (
@@ -15,7 +15,7 @@ const meta: Meta = {
   ],
 };
 
-export { default as Default } from './DefaultButton';
-export { default as WithDropdown } from './WithDropdownButton';
+export { default as Default } from './DefaultInput';
+export { default as WithActionsInput } from './WithActionsInput';
 
 export default meta;

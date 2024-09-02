@@ -87,6 +87,7 @@ button {
 input {
   border: none;
   padding: 0;
+  outline: none;
 }
 `;
 

@@ -13,6 +13,10 @@ export { default as ToolbarButton } from './ToolbarButton';
 
 export { default as CountBadge } from './CountBadge';
 
+/* Input */
+
+export { default as Input } from './Input';
+
 export { default as ReactVSCodeProvider } from './ReactVSCodeProvider';
 export * from './ReactVSCodeProvider';
 

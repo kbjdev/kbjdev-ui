@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Color } from '../utils/vs/color';
+import colorGuard from '../utils/color/colorGuard';
 
 const BaseButton = styled.button`
   display: flex;
@@ -8,12 +8,12 @@ const BaseButton = styled.button`
   height: 100%;
   padding: 4px;
   background-color: ${({ theme }) => theme['button.background']};
-  border: 1px solid ${({ theme }) => theme['button.border'] ?? Color.transparent.toString()};
+  border: 1px solid ${({ theme }) => colorGuard(theme['button.border'])};
   border-radius: 2px;
   cursor: pointer;
 
   font-size: 13px;
-  color: ${({ theme }) => theme['button.foreground'] ?? theme.foreground};
+  color: ${({ theme }) => colorGuard(theme['button.foreground'], theme.foreground)};
 
   &:hover {
     background-color: ${({ theme }) => theme['button.hoverBackground']};
