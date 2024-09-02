@@ -9,10 +9,10 @@ import React, {
   useState,
 } from 'react';
 import styled from 'styled-components';
+import { ellipsisTextCss } from '../../base/text';
+import colorGuard from '../../utils/color/colorGuard';
 import Codicon, { CodiconName } from '../Codicon';
 import ToolbarButton from '../ToolbarButton';
-import { ellipsisTextCss } from '../base/text';
-import colorGuard from '../utils/color/colorGuard';
 
 const Wrapper = styled.div<{ $isFocused: boolean }>`
   display: flex;

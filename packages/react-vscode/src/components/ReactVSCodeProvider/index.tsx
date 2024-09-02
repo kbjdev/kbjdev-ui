@@ -2,9 +2,9 @@
 import React, { FC, PropsWithChildren, useMemo, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './GlobalStyles';
-import ColorRegistry from '../utils/color/colorRegistry';
+import ColorRegistry from '../../utils/color/colorRegistry';
 
-import type { IVSCodeTheme } from '../types/color';
+import type { IVSCodeTheme } from '../../types/color';
 
 interface IReactVSCodeProviderProps {
   theme?: IVSCodeTheme;

@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes, FC, MouseEventHandler, PropsWithChildren } from 'react';
 import styled from 'styled-components';
+import BaseButton from '../../base/button';
 import Codicon from '../Codicon';
-import BaseButton from '../base/button';
 
 const Wrapper = styled.div`
   display: flex;
