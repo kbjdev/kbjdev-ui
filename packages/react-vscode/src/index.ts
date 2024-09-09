@@ -13,9 +13,13 @@ export { default as ToolbarButton } from './components/ToolbarButton';
 
 export { default as CountBadge } from './components/CountBadge';
 
-/* Input */
+/* INPUT */
 
 export { default as Input } from './components/Input';
+
+/* PROGRESS BAR */
+
+export { default as ProgressBar } from './components/ProgressBar';
 
 export { default as ReactVSCodeProvider } from './components/ReactVSCodeProvider';
 export * from './components/ReactVSCodeProvider';
