@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import React, { FC, PropsWithChildren, useMemo, useRef } from 'react';
+import React, { FC, PropsWithChildren, useMemo, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './GlobalStyles';
 import ColorRegistry from '../../utils/color/colorRegistry';
@@ -80,7 +80,7 @@ const ReactVSCodeProvider: FC<PropsWithChildren<IReactVSCodeProviderProps>> = ({
   theme,
   children,
 }) => {
-  const registry = useRef(new ColorRegistry()).current;
+  const [registry] = useState(() => new ColorRegistry());
 
   const colors = useMemo(() => {
     const themeColors = theme?.colors ?? defaultDarkTheme;
